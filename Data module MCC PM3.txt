@@ -1,0 +1,431 @@
+MCC 1 (574)
+-----------
+P-35
+BR-07-A
+Null
+AG-27
+P-30
+Null
+P-25
+----------
+P-47
+BR-05
+Cooling oil gearbox?
+P-36
+P-06
+P-46
+P-40
+----------
+P-78
+P-29
+P-28
+AP-03
+SD-03
+AP-02
+P-51
+----------
+P-72
+AG-22
+P-58
+BR-04
+Null
+Null
+Null
+***************
+----------
+MCC VI (852)
+---------- SS
+P-84-A
+P-57
+Null
+V-06
+P-26
+Null
+---------- SS
+BR-07-B
+P-55
+P-84
+P-38
+Null
+Null
+---------- R
+Rail crane
+C-23 Inverter
+**************
+----------
+MCC V (422)
+---------- SS
+BR-06
+AG-28
+Null
+Null
+BR-01
+Null
+---------- SS
+P-31
+P-33
+V-05
+P-33
+P-34
+Null
+---------- R
+P-77
+**************
+MCC 2 (639)
+---------- 1
+P-59
+P-87
+IM-OM1
+Power osc breast roll
+Power nalco
+Null
+Lub Dryer L-05 & L-04
+---------- 2
+P-79
+IM-OM2
+Power caustic soda
+P-54
+Lubrication pope reel
+H-09
+Null
+---------- 3
+P-80
+P-82
+SD-04
+IM-1PT
+IM-1PB
+H-04
+IM-2PT
+---------- 4
+Lub Dryer L-06 & L-03
+P-67
+P-74
+IM-2PB
+IM-PPR
+Cleaning pump
+H-10
+---------- 5
+Power trim cutter B
+Power dekat AP-01
+P-73
+Power buckman PM7
+AG-82
+Null
+H-11
+---------- 6
+Power kemira
+P-69
+H-01
+AG-81
+C-22 Inverter
+---------- 7 (YD)
+H-02
+H-03
+H-05
+H-12
+V-01
+Null
+Null
+**************
+----------
+MCC VII (483)
+---------- SS
+Null
+AP-01
+H-06
+H-07
+H-08
+Null
+**************
+MCC III (922)
+---------- 1
+P-81
+Power air dryer
+V-09
+Power traversing
+Null
+Power RO Reverse Osmosis
+C-20-A
+---------- 2
+SD-02
+Power M-Clean lama
+IM-0D
+IM-51D
+MDFC1
+MDFC2
+C-20
+---------- 3
+SD-01
+IM-10D
+IM-35D
+Null
+MDFC3
+MDFC4
+C-18
+---------- 4
+IM-21D
+Power sumpit gudang jadi
+AC UCI000305
+Power hydraulic circulation
+C-19
+C-21
+Primary arm pope reel
+---------- 5
+MK-35
+AC Drive
+Null
+Power chemical bawah
+MK-34
+Power RH-03
+Null
+**************
+
+
+*************
+MCC D
+----------
+P-01
+P-16
+SP-31-B
+P-76
+P-43
+Spare6
+----------
+P-71-A
+*************
+
+*************
+MCC B
+---------- 1
+SP-01
+SP-31
+SP-32
+SPARE
+P-46
+Ex. AG-03-B
+SPARE
+---------- 2
+SPARE
+AG-10
+AG-20
+RJ-03-A
+AG-11
+P-24
+SPARE
+---------- 3
+P-20
+P-21
+SP-31-C
+P-23
+P-23-A
+SPARE
+SPARE
+---------- 4
+P-22
+RJ-02
+SP-22
+P-4-3
+P-41
+P-18
+BLOWER VP-10
+---------- 5
+P-83
+SP-20
+P-70-A
+P-53
+P-48
+RJ-01
+SPARE
+---------- 6 YD
+AG-06
+AG-15
+AG-16
+SP-29
+SP-30
+SPARE
+SPARE
+*************
+
+
+*************
+MCC C
+----------
+P-08
+AG-21
+SP-10
+P-03
+P-09
+SPARE
+----------
+AG-04-A
+AG-04-B
+SP-21
+SP-27
+P-07
+SPARE
+----------
+P-50
+P-70
+P-10
+P-17
+SP-09
+SPARE
+----------
+RJ-04-A
+RJ-04-B
+----------
+
+
+*************
+MCC A
+---------- 1
+SPARE 110kW
+P-39
+SPARE 55kW
+---------- 2
+SPARE 110kW
+AG-02
+AG-03-B
+---------- 3
+SPARE 110kW
+Spare
+AG-14
+---------- 4
+-
+SP-11
+SPARE 7.5kW
+SP-02
+SPARE 55KW
+---------- 5
+AG-07
+SP-12
+SP-25
+SPARE 11KW
+SPARE 45KW
+AG-03-A
+---------- 6
+P-02
+SPARE 5.5KW
+P-05
+P-11
+POWER SP-13/14
+P-13
+---------- 7
+SPARE 22KW
+P-12
+P-19
+SPARE 11KW
+SPARE 45KW
+P-14
+----------- 8
+SPARE 37KW
+AG-01
+P-43
+AG-05
+SPARE BREAKER 160A
+SPARE SS 55KW
+----------
+
+
+*************
+MCC SP-1
+----------
+INCOMING
+----------
+SP-04
+----------
+SP-23
+----------
+SP-03
+----------
+SP-19
+----------
+P-15
+----------
+SPARE 750kW
+----------
+
+*************
+MCC SP-2
+----------
+P-49
+SPARE
+SP-24
+SPARE
+----------
+
+*************
+MCC PM-1
+----------
+VP-04
+VP-02
+SPARE 500KW
+VP-07
+VP-08
+VP-03
+VP-10
+----------
+
+
+************
+MCC HT DP
+----------
+MD-01
+MD-02
+SPARE 900KW
+P341
+----------
+
+
+*************
+MCC LV DP
+---------- 1
+CN-15
+---------- 2
+SR-19
+---------- 3
+SR-20
+---------- 4
+LRC-2
+LRC-1
+---------- 5
+CN-13
+CN-12
+---------- 6
+P-196
+P-197
+---------- 7
+CN-14
+CN-16
+CN-17
+---------- 8
+P-DP-1
+AP-12
+Ap-13
+Ou-01
+Ou-02
+Cn-12
+Cn-13
+Fc-con-1
+Fc-con-2
+---------- 9
+Rj-07
+Fan pp-16
+Fan pp-15
+Brake cn-12
+Brake cn-13
+Hyd lrc-1
+Hyd lrc-2
+----------- 10
+PP-15
+PP-16
+-----------
+
+
+***********
+MCC PM-2
+-----------
+Compressor 1
+BR-08
+BR-09
+-----------

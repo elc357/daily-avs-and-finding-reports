@@ -1,0 +1,390 @@
+@startuml Database MCC_PM3
+
+entity mcc_1 {
+    * id: INT auto increment
+    name: VARCHAR(100) 
+    --
+    power: FLOAT unsigned
+    ampere: FLOAT unsigned
+    pole: INT unsigned
+    funcloc: VARCHAR(100)
+    area: ENUM
+}
+
+entity mcc_2 {
+    * id: INT auto increment
+    name: VARCHAR(100) 
+    --
+    power: FLOAT unsigned
+    ampere: FLOAT unsigned
+    pole: INT unsigned
+    funcloc: VARCHAR(100)
+    area: ENUM
+}
+
+entity mcc_3 {
+    * id: INT auto increment
+    name: VARCHAR(100) 
+    --
+    power: FLOAT unsigned
+    ampere: FLOAT unsigned
+    pole: INT unsigned
+    funcloc: VARCHAR(100)
+    area: ENUM
+}
+
+entity mcc_5 {
+    * id: INT auto increment
+    name: VARCHAR(100) 
+    --
+    power: FLOAT unsigned
+    ampere: FLOAT unsigned
+    pole: INT unsigned
+    funcloc: VARCHAR(100)
+    area: ENUM
+}
+
+entity mcc_6 {
+    * id: INT auto increment
+    name: VARCHAR(100) 
+    --
+    power: FLOAT unsigned
+    ampere: FLOAT unsigned
+    pole: INT unsigned
+    funcloc: VARCHAR(100)
+    area: ENUM
+}
+
+entity mcc_7 {
+    * id: INT auto increment
+    name: VARCHAR(100) 
+    --
+    power: FLOAT unsigned
+    ampere: FLOAT unsigned
+    pole: INT unsigned
+    funcloc: VARCHAR(100)
+    area: ENUM
+}
+
+entity mcc_a {
+    * id: INT auto increment
+    name: VARCHAR(100) 
+    --
+    power: FLOAT unsigned
+    ampere: FLOAT unsigned
+    pole: INT unsigned
+    funcloc: VARCHAR(100)
+    area: ENUM
+}
+
+entity mcc_b {
+    * id: INT auto increment
+    name: VARCHAR(100) 
+    --
+    power: FLOAT unsigned
+    ampere: FLOAT unsigned
+    pole: INT unsigned
+    funcloc: VARCHAR(100)
+    area: ENUM
+}
+
+entity mcc_c {
+    * id: INT auto increment
+    name: VARCHAR(100) 
+    --
+    power: FLOAT unsigned
+    ampere: FLOAT unsigned
+    pole: INT unsigned
+    funcloc: VARCHAR(100)
+    area: ENUM
+}
+
+entity mcc_d {
+    * id: INT auto increment
+    name: VARCHAR(100) 
+    --
+    power: FLOAT unsigned
+    ampere: FLOAT unsigned
+    pole: INT unsigned
+    funcloc: VARCHAR(100)
+    area: ENUM
+}
+
+entity mcc_htm_sp1 {
+    * id: INT auto increment
+    name: VARCHAR(100) 
+    --
+    power: FLOAT unsigned
+    ampere: FLOAT unsigned
+    pole: INT unsigned
+    funcloc: VARCHAR(100)
+    area: ENUM
+}
+
+entity mcc_htm_sp2 {
+    * id: INT auto increment
+    name: VARCHAR(100) 
+    --
+    power: FLOAT unsigned
+    ampere: FLOAT unsigned
+    pole: INT unsigned
+    funcloc: VARCHAR(100)
+    area: ENUM
+}
+
+entity mcc_htm_pm1 {
+    * id: INT auto increment
+    name: VARCHAR(100) 
+    --
+    power: FLOAT unsigned
+    ampere: FLOAT unsigned
+    pole: INT unsigned
+    funcloc: VARCHAR(100)
+    area: ENUM
+}
+
+entity mcc_htm_pm2 {
+    * id: INT auto increment
+    name: VARCHAR(100) 
+    --
+    power: FLOAT unsigned
+    ampere: FLOAT unsigned
+    pole: INT unsigned
+    funcloc: VARCHAR(100)
+    area: ENUM
+}
+
+
+
+
+' ===================================
+' =========== AVS SECTION ===========
+' ===================================
+
+entity avs_mcc_1 {
+    * id: INT auto increment
+    name: VARCHAR(100) *FK
+    --
+    * ampere: FLOAT
+    * temperature: FLOAT
+    checked_by: VARCHAR(255)
+    created_at: TIMESTAMP 
+}
+
+entity avs_mcc_2 {
+    * id: INT auto increment
+    name: VARCHAR(100) *FK
+    --
+    * ampere: FLOAT
+    * temperature: FLOAT
+    checked_by: VARCHAR(255)
+    created_at: TIMESTAMP 
+}
+
+entity avs_mcc_3 {
+    * id: INT auto increment
+    name: VARCHAR(100) *FK
+    --
+    * ampere: FLOAT
+    * temperature: FLOAT
+    checked_by: VARCHAR(255)
+    created_at: TIMESTAMP 
+}
+
+entity avs_mcc_5 {
+    * id: INT auto increment
+    name: VARCHAR(100) *FK
+    --
+    * ampere: FLOAT
+    * temperature: FLOAT
+    checked_by: VARCHAR(255)
+    created_at: TIMESTAMP 
+}
+
+entity avs_mcc_6 {
+    * id: INT auto increment
+    name: VARCHAR(100) *FK
+    --
+    * ampere: FLOAT
+    * temperature: FLOAT
+    checked_by: VARCHAR(255)
+    created_at: TIMESTAMP 
+}
+
+entity avs_mcc_7 {
+    * id: INT auto increment
+    name: VARCHAR(100) *FK
+    --
+    * ampere: FLOAT
+    * temperature: FLOAT
+    checked_by: VARCHAR(255)
+    created_at: TIMESTAMP 
+}
+
+entity avs_mcc_a {
+    * id: INT auto increment
+    name: VARCHAR(100) *FK
+    --
+    * ampere: FLOAT
+    * temperature: FLOAT
+    checked_by: VARCHAR(255)
+    created_at: TIMESTAMP 
+}
+
+entity avs_mcc_b {
+    * id: INT auto increment
+    name: VARCHAR(100) *FK
+    --
+    * ampere: FLOAT
+    * temperature: FLOAT
+    checked_by: VARCHAR(255)
+    created_at: TIMESTAMP 
+}
+
+entity avs_mcc_c {
+    * id: INT auto increment
+    name: VARCHAR(100) *FK
+    --
+    * ampere: FLOAT
+    * temperature: FLOAT
+    checked_by: VARCHAR(255)
+    created_at: TIMESTAMP 
+}
+
+entity avs_mcc_d {
+    * id: INT auto increment
+    name: VARCHAR(100) *FK
+    --
+    * ampere: FLOAT
+    * temperature: FLOAT
+    checked_by: VARCHAR(255)
+    created_at: TIMESTAMP 
+}
+
+entity avs_mcc_htm_sp1 {
+    * id: INT auto increment
+    name: VARCHAR(100) *FK
+    --
+    * ampere: FLOAT
+    * temperature: FLOAT
+    checked_by: VARCHAR(255)
+    created_at: TIMESTAMP 
+}
+
+entity avs_mcc_htm_sp2 {
+    * id: INT auto increment
+    name: VARCHAR(100) *FK
+    --
+    * ampere: FLOAT
+    * temperature: FLOAT
+    checked_by: VARCHAR(255)
+    created_at: TIMESTAMP 
+}
+
+entity avs_mcc_htm_pm1 {
+    * id: INT auto increment
+    name: VARCHAR(100) *FK
+    --
+    * ampere: FLOAT
+    * temperature: FLOAT
+    checked_by: VARCHAR(255)
+    created_at: TIMESTAMP 
+}
+
+entity avs_mcc_htm_pm2 {
+    * id: INT auto increment
+    name: VARCHAR(100) *FK
+    --
+    * ampere: FLOAT
+    * temperature: FLOAT
+    checked_by: VARCHAR(255)
+    created_at: TIMESTAMP 
+}
+
+' =====================================
+' =========== TABLE FINDING ===========
+' =====================================
+
+entity finding {
+    * id: INT auto increment
+    status: ENUM ("Prepared", "Monitoring", "Closed")
+    name: VARCHAR(20)
+    notif: VARCHAR(8)
+    area: VARCHAR(3)
+    equipment: VARCHAR(9)
+    finddate: DATETIME
+    findby: VARCHAR(30)
+    funcloc: VARCHAR(20)
+    description: VARCHAR(125)
+    format: CHAR(5)
+    deleted: TINYINT(1)
+}
+
+' =====================================
+' ============ TABLE USERS ============
+' =====================================
+entity users {
+    user: VARCHAR(255)
+    password: VARCHAR(255)
+}
+
+' ====================================
+' =========== DB RELATIONS ===========
+' ====================================
+
+mcc_1 ||--|{ avs_mcc_1
+mcc_2 ||--|{ avs_mcc_2
+mcc_3 ||--|{ avs_mcc_3
+mcc_5 ||--|{ avs_mcc_5
+mcc_6 ||--|{ avs_mcc_6
+mcc_7 ||--|{ avs_mcc_7
+
+mcc_a ||--|{ avs_mcc_a
+mcc_b ||--|{ avs_mcc_b
+mcc_c ||--|{ avs_mcc_c
+mcc_d ||--|{ avs_mcc_d
+
+mcc_htm_sp1 ||--|{ avs_mcc_htm_sp1
+mcc_htm_sp2 ||--|{ avs_mcc_htm_sp2
+mcc_htm_pm1 ||--|{ avs_mcc_htm_pm1
+mcc_htm_pm2 ||--|{ avs_mcc_htm_pm2
+
+
+users ||--|{ avs_mcc_1
+users ||--|{ avs_mcc_2
+users ||--|{ avs_mcc_3
+users ||--|{ avs_mcc_5
+users ||--|{ avs_mcc_6
+users ||--|{ avs_mcc_7
+
+users ||--|{ avs_mcc_a
+users ||--|{ avs_mcc_b
+users ||--|{ avs_mcc_c
+users ||--|{ avs_mcc_d
+
+users ||--|{ avs_mcc_htm_sp1
+users ||--|{ avs_mcc_htm_sp2
+users ||--|{ avs_mcc_htm_pm1
+users ||--|{ avs_mcc_htm_pm2
+
+users ||--|{ finding
+
+
+
+' FINDING
+' mcc_1 |o--|{ finding
+' mcc_2 |o--|{ finding
+' mcc_3 |o--|{ finding
+' mcc_5 |o--|{ finding
+' mcc_6 |o--|{ finding
+' mcc_7 |o--|{ finding
+' mcc_a |o--|{ finding
+' mcc_b |o--|{ finding
+' mcc_c |o--|{ finding
+' mcc_d |o--|{ finding
+' mcc_htm_sp1 |o--|{ finding
+' mcc_htm_sp2 |o--|{ finding
+' mcc_htm_pm1 |o--|{ finding
+' mcc_htm_pm2 |o--|{ finding
+
+@enduml

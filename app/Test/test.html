@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    a:link {
+      background-color: rgb(132, 189, 0);
+    }
+  </style>
+  <body>
+    <a href="">Click Me!</a>
+
+    <figure class="content">
+      <div class="image">
+        <img src="img/$id.jpg" alt="$description" />
+      </div>
+      <form action="/finding-update" method="post" class="info-box">
+        <div class="info">
+          <ul class="info-left">
+            <li>Status</li>
+            <li>Id</li>
+            <li>Name</li>
+            <li>Notif</li>
+            <li>Area</li>
+            <li>Equipment</li>
+            <li>Date</li>
+            <li>Find By</li>
+            <li>Funcloc</li>
+          </ul>
+          <ul class="info-right">
+            <li class="status">
+              $status
+              <input class="finding-id" type="hidden" />
+            </li>
+            <li name="id" id="id">$id</li>
+            <li name="name" id="name">$name</li>
+            <li name="notif" id="notif">$notif</li>
+            <li name="area" id="area">$area</li>
+            <li name="equipment" id="equipment">$equipment</li>
+            <li name="finddate" id="finddate">$finddate</li>
+            <li name="findby" id="findby">$findby</li>
+            <li name="funcloc" id="funcloc">$funcloc</li>
+          </ul>
+        </div>
+        <div>
+          <p class="description" name="description" id="description">
+            $description
+          </p>
+        </div>
+        <div>
+          <input type="submit" class="btn" value="Update" />
+        </div>
+      </form>
+    </figure>
+
+    <select style="display: inline" class="status" name="status" id="status">
+      <option value="Prepared">Prepared</option>
+      <option selected value="Monitoring">Monitoring</option>
+      <option value="Closed">Closed</option>
+    </select>
+
+    &lt; &gt;
+  </body>
+</html>

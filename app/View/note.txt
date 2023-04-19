@@ -1,0 +1,229 @@
+          <?php
+            foreach ($model["statement"] as $keys => $value) {
+                foreach ($value as $key => $result) {
+                    if (is_integer($key)) {
+            ?>
+                        <p>
+                            <?php if ($result == NULL) {
+                                echo "-";
+                            } else {
+                                echo $result;
+                            }
+                            ?>
+                        </p>
+                <?php
+                    }
+                }
+                ?>
+                <br>
+            <?php
+            }
+            ?>
+
+
+figure class="content">
+                <div class="image">
+                    <img src="img/1.jpg" alt="Finding">
+                </div>
+                <div class="info-box">
+                    <div class="info">
+                        <ul class="info-left">
+                            <li>Status</li>
+                            <li>Id</li>
+                            <li>Name</li>
+                            <li>Notif</li>
+                            <li>Area</li>
+                            <li>Equipment</li>
+                            <li>Date</li>
+                            <li>Funcloc</li>
+                        </ul>
+                        <ul class="info-right">
+                            <li class="status" contenteditable="true" autocorrect="false">$test</li>
+                            <li class="id">00001</li>
+                            <li class="name">M-2-2</li>
+                            <li class="notif">80611893</li>
+                            <li class="area">PM7</li>
+                            <li class="equipment">EMO000365</li>
+                            <li class="date">13 Mar 2023</li>
+                            <li class="funcloc">FP-01-PM7-CAL-CAL1-TPR1</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad incidunt consequuntur asperiores architecto</p>
+                    </div>
+                </div>
+            </figure>
+
+
+ <?php echo $model["data"][0]->getStatus() ?>
+            <br />
+            <?php echo $model["data"][0]->getId() ?>
+            <br />
+            <?php echo $model["data"][0]->getName() ?>
+            <br />
+            <?php echo $model["data"][0]->getNotif() ?>
+            <br />
+            <?php echo $model["data"][0]->getArea() ?>
+            <br />
+            <?php echo $model["data"][0]->getEquipment() ?>
+            <br />
+            <?php echo $model["data"][0]->getFinddate() ?>
+            <br />
+            <?php echo $model["data"][0]->getFuncloc() ?>
+            <br />
+            <?php echo $model["data"][0]->getDescription() ?>
+
+
+
+$frame_backup = <<<FRAME
+    <figure class="content">
+        <div class="image">
+            <img src="img/$id.jpg" alt="$description">
+        </div>
+        <div class="info-box">
+            <div class="info">
+                <ul class="info-left">
+                    <li>Status</li>
+                    <li>Id</li>
+                    <li>Name</li>
+                    <li>Notif</li>
+                    <li>Area</li>
+                    <li>Equipment</li>
+                    <li>Date</li>
+                    <li>Funcloc</li>
+                </ul>
+                <ul class="info-right">
+                    <li class="status" >$status</li>
+                    <li>$id</li>
+                    <li>$name</li>
+                    <li>$notif</li>
+                    <li>$area</li>
+                    <li>$equipment</li>
+                    <li>$finddate</li>
+                    <li>$funcloc</li>
+                </ul>
+            </div>
+            <div>
+                <p class="description">$description</p>
+            </div>
+        </div>
+    </figure>
+    FRAME;
+
+
+
+
+
+
+    $frame = <<<FRAME
+    <figure class="content">
+      <div class="image">
+        <img src="img/$id.jpg" alt="$description" />
+      </div>
+      <form action="/test" method="post" class="info-box">
+        <div class="info">
+          <ul class="info-left">
+            <li>Status</li>
+            <li>Id</li>
+            <li>Name</li>
+            <li>Notif</li>
+            <li>Area</li>
+            <li>Equipment</li>
+            <li>Date</li>
+            <li>Funcloc</li>
+          </ul>
+          <ul class="info-right">
+            <li class="status">$status</li>
+            <li name="id" id="id">$id</li>
+            <li name="name" id="name">$name</li>
+            <li name="notif" id="notif">
+              $notif
+            </li>
+            <li name="area" id="area">$area</li>
+            <li
+              role="input"
+              contenteditable="true"
+              name="equipment"
+              id="equipment"
+            >
+              $equipment
+            </li>
+            <li name="finddate" id="finddate">$finddate</li>
+            <li name="funcloc" id="funcloc">
+              $funcloc
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p
+            class="description"
+            name="description"
+            id="description"
+          >
+            $description
+          </p>
+        </div>
+        <div>
+          <input type="Submit" name="update" id="update" value="Update" />
+        </div>
+      </form>
+    </figure>
+    FRAME;
+
+
+
+  PUT INTO INPUT SPV LEVEL UP
+    <figure class="content">
+      <div class="image">
+        <img src="img/$id.jpg" alt="$description" />
+      </div>
+      <form action="/finding-update" method="post" class="info-box">
+        <div class="info">
+          <ul class="info-left">
+            <li>Status</li>
+            <li>Id</li>
+            <li>Name</li>
+            <li>Notif</li>
+            <li>Area</li>
+            <li>Equipment</li>
+            <li>Date</li>
+            <li>Find By</li>
+            <li>Funcloc</li>
+          </ul>
+          <ul class="info-right">
+            <li class="status">$status</li>
+            <li name="id" id="id">$id
+              <input class="finding-id" name="finding-id" id="finding-id" type="hidden"/>
+            </li>
+            <li name="name" id="name">$name</li>
+            <li name="notif" id="notif">
+              $notif
+            </li>
+            <li name="area" id="area">$area</li>
+            <li              
+              name="equipment"
+              id="equipment"
+            >
+              $equipment
+            </li>
+            <li name="finddate" id="finddate">$finddate</li>
+            <li name="findby" id="findby">$findby</li>
+            <li name="funcloc" id="funcloc">
+              $funcloc
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p
+            class="description"
+            name="description"
+            id="description"
+          >
+            $description
+          </p>
+        </div>
+        <div>
+          <input type="submit" class="btn" value="Update"/>
+        </div>
+      </form>
+    </figure>

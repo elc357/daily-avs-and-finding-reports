@@ -1,0 +1,82 @@
+@startuml Database MCC_PM3
+
+entity mcc_n {
+    * id: INT auto increment
+    name: VARCHAR(100) 
+    --
+    power: FLOAT unsigned
+    ampere: FLOAT unsigned
+    pole: INT unsigned
+    funcloc: VARCHAR(100)
+    area: ENUM
+}
+
+
+' ===================================
+' =========== AVS SECTION ===========
+' ===================================
+
+entity avs_mcc_n {
+    * id: INT auto increment
+    name: VARCHAR(100) *FK
+    --
+    * ampere: FLOAT
+    * temperature: FLOAT
+    checked_by: VARCHAR(255)
+    created_at: TIMESTAMP 
+}
+
+' =====================================
+' =========== TABLE FINDING ===========
+' =====================================
+
+entity finding {
+    * id: INT auto increment
+    status: ENUM ("Prepared", "Monitoring", "Closed")
+    name: VARCHAR(20)
+    notif: VARCHAR(8)
+    area: VARCHAR(3)
+    equipment: VARCHAR(9)
+    finddate: DATETIME
+    findby: VARCHAR(30)
+    funcloc: VARCHAR(20)
+    description: VARCHAR(125)
+    format: CHAR(5)
+    deleted: TINYINT(1)
+}
+
+' =====================================
+' ============ TABLE USERS ============
+' =====================================
+entity users {
+    user: VARCHAR(255)
+    password: VARCHAR(255)
+}
+
+
+' ====================================
+' =========== DB RELATIONS ===========
+' ====================================
+
+mcc_n ||--|{ avs_mcc_n
+users ||--|{ avs_mcc_n
+users ||--|{ finding
+
+
+' FINDING
+' mcc_1 |o--|{ finding
+' mcc_2 |o--|{ finding
+' mcc_3 |o--|{ finding
+' mcc_5 |o--|{ finding
+' mcc_6 |o--|{ finding
+' mcc_7 |o--|{ finding
+' mcc_a |o--|{ finding
+' mcc_b |o--|{ finding
+' mcc_c |o--|{ finding
+' mcc_d |o--|{ finding
+' mcc_htm_sp1 |o--|{ finding
+' mcc_htm_sp2 |o--|{ finding
+' mcc_htm_pm1 |o--|{ finding
+' mcc_htm_pm2 |o--|{ finding
+
+@enduml

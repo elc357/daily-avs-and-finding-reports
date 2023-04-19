@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000d:/DEV/Course/html-css-course-master/starter/04-CSS-Layouts/index.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000d:/DEV/Course/html-css-course-master/starter/04-CSS-Layouts/index.html"
+    }
+  ]
+}
